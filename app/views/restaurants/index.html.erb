@@ -1,4 +1,6 @@
 <h1>All the restaurants</h1>
+<%= link_to 'Create a new restaurant', new_restaurant_path %>
+
 <% @restaurants.each do |restaurant| %>
   <h5><%= restaurant.name %> <%= restaurant.rating %></h5>
   <%= restaurant.address %>
